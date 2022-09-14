@@ -757,6 +757,12 @@ height: 30px;
 cursor: pointer;
 }
 
-
+input::placeholder {
+    color: var(--secondary-color);
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+}
 
 
