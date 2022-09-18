@@ -599,6 +599,9 @@ background-color: transparent;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -934,7 +937,8 @@ font-size: 12px;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-form-message:focus {
+.register-form-message:focus,
+.register-form-message:hover {
 border-color: var(--link-active);
 }
 
@@ -1003,7 +1007,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 background-color: var(--button-color-active);
 }
 
-/* .visually-hidden {
+.visually-hidden {
 position: absolute;
 white-space: nowrap;
 width: 1px;
@@ -1014,6 +1018,6 @@ padding: 0;
 clip: rect(0 0 0 0);
 clip-path: inset(50%);
 margin: -1px;
-} */
+}
 
 
