@@ -881,11 +881,16 @@ outline: transparent;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-form-input:focus {
+.register-form-input:focus,
+.register-form-input:hover {
 border-color: var(--link-active);
 }
 
 .register-form-input:focus + .register-form-icon {
+fill: var(--link-active);
+}
+
+.register-form-input:hover + .register-form-icon {
 fill: var(--link-active);
 }
 
@@ -963,11 +968,13 @@ opacity: 1;
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-form-checkbox:checked + .register-icon-checked .icon-checked {
+.register-form-checkbox:checked + 
+.register-form-icons .icon-checked {
 opacity: 1;
 }
 
-.register-form-checkbox:checked + .register-icon-checked .icon-unchecked {
+.register-form-checkbox:checked + 
+.register-form-icons .icon-unchecked {
 opacity: 0;
 }
 
@@ -996,7 +1003,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 background-color: var(--button-color-active);
 }
 
-.visually-hidden {
+/* .visually-hidden {
 position: absolute;
 white-space: nowrap;
 width: 1px;
@@ -1007,6 +1014,6 @@ padding: 0;
 clip: rect(0 0 0 0);
 clip-path: inset(50%);
 margin: -1px;
-}
+} */
 
 
