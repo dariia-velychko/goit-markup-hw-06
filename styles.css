@@ -542,12 +542,11 @@ display: flex;
 }
 
 .social-links-block {
-display: flex;
+margin-left: 70px;
 }
 
 .footer-container {
 display: flex;
-gap: 70px;
 align-items: baseline;
 }
 
@@ -578,7 +577,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .send-mail-footer {
 display: block;
-margin-left: 93px;
+margin-left: auto;
 }
 
 .title-footer {
@@ -596,6 +595,7 @@ padding-left: 16px;
 width: 358px;
 height: 50px;
 background-color: transparent;
+color: var(--light-bgk);
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
